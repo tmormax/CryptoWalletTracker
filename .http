@@ -1,0 +1,39 @@
+###
+POST https://api.airtable.com/v0/app4T4THVEosSXQw5/Wallet%20Lists
+Content-Type: application/json
+Authorization: Bearer patF1prTrcJza5lsB.3f9077c9243efd178472af50c159bcada50fadab94fdb9c8506e297dbeae69ad
+
+{
+    "records":[{"fields":{"List Name": "Test 1","Holders List":"0x72afd744576f1bce7d4dbaa2a27db40da86e87d3\n0xABCDEF\n0xGHIJKLM"}}]
+}
+
+###
+GET https://api.airtable.com/v0/app4T4THVEosSXQw5/GENIE-DARK?offset=itrKrd5YXOJMzmjNy/reco8681CEYj5ijGy
+Content-Type: application/json
+Authorization: Bearer patF1prTrcJza5lsB.3f9077c9243efd178472af50c159bcada50fadab94fdb9c8506e297dbeae69ad
+
+###
+DELETE https://api.airtable.com/v0/app4T4THVEosSXQw5/Defi%20List
+Content-Type: application/json
+Authorization: Bearer patF1prTrcJza5lsB.3f9077c9243efd178472af50c159bcada50fadab94fdb9c8506e297dbeae69ad
+
+
+###
+POST http://localhost:3000/api/add-wallets-list
+Content-Type: application/json
+
+{
+    "listName": "Temp List",
+    "walletList": ["0xABCD","0xEFGH"]
+}
+
+###
+PATCH https://api.airtable.com/v0/app4T4THVEosSXQw5/tbl3mvMFP8Uq7yZRJ/recyRODsRbG4tnFoV
+Content-Type: application/json
+Authorization: Bearer patF1prTrcJza5lsB.3f9077c9243efd178472af50c159bcada50fadab94fdb9c8506e297dbeae69ad
+
+{
+    "fields":{
+        "Holders List": "0x01930dc6d5d5ef8d02e02dc163c33c4a963752fb\n0x0f3a1e840f030617b7496194dc96bf9be1e54d59\n0xc5905e093033f3e1267466608278aa478f3d39c0"
+        }
+}
